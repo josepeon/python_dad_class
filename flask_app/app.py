@@ -14,6 +14,14 @@ def about():
 def contact():
     return render_template('contact.html')
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
+@app.route('/loops')
+def loopin():
+    return render_template('loops.html', x = [1, 2, 3])
+
 if __name__ == '__main__':
     app.run(debug=True)
 
